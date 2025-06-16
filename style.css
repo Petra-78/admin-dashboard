@@ -14,16 +14,21 @@
     box-sizing: border-box;
     color: var(--white);
     font-family: "Actor", sans-serif;
+    font-size: 1.7rem;
 }
 
 html {
-    font-size: clamp(1rem, 62,5%, 4rem);
+    font-size: 62.5%;
     background-color: var(--green);
 }
 
 body {
     height: 100vh;
     width: 100vw;
+}
+
+h1 {
+    font-size: 3.5rem;
 }
 
 .container {
@@ -46,7 +51,7 @@ body {
     display: grid;
     grid-template-rows: 1fr 3fr 3fr;
     align-items: center;
-    padding: 0px 1rem;
+    padding: 0px 3rem;
 }
 
 .title, .general > *, .other > *{
@@ -54,6 +59,7 @@ body {
     justify-content: start;
     align-items: center;
     gap: 1rem;
+    font-size: 2rem;
 }
 
 .general, .other {
@@ -63,7 +69,7 @@ body {
 }
 
 svg {
-    height: 2rem;
+    height: 2.5rem;
     fill: var(--white);
 }
 
@@ -81,12 +87,12 @@ svg {
 .searchbar, .account, .buttons {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .account, .buttons {
     justify-content: end;
-    gap: 2rem;
+    gap: 3rem;
 }
 
 .pfp {
@@ -97,16 +103,18 @@ svg {
 
 #pfp {
     grid-row: 1/3;
-    height: 3rem;
-    margin-right: 20px;
+    height: 5rem;
+    margin-right: 2rem;
 }
 
 .greeting {
     align-self: flex-end;
+    font-size: 1.6rem;
 }
 
 .name {
     align-self: baseline;
+    font-size: 2.5rem;
 }
 
 input {
@@ -120,7 +128,7 @@ button {
     padding: 5px 20px;
     border: none;
     border-radius: 10px;
-        font-size: 1.1rem;
+    font-size: 1.8rem;
 }
 
 button:hover {
