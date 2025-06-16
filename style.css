@@ -84,7 +84,7 @@ svg {
     gap: 1rem;
 }
 
-.account {
+.account, .buttons {
     justify-content: end;
     gap: 2rem;
 }
@@ -101,8 +101,28 @@ svg {
     margin-right: 20px;
 }
 
+.greeting {
+    align-self: flex-end;
+}
+
+.name {
+    align-self: baseline;
+}
+
 input {
     width: 100%;
     padding: 5px;
     border-radius: 10px;
+}
+
+button {
+    background-color: var(--green);
+    padding: 5px 20px;
+    border: none;
+    border-radius: 10px;
+        font-size: 1.1rem;
+}
+
+button:hover {
+    cursor: pointer;
 }
