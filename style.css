@@ -104,7 +104,7 @@ svg {
     gap: 3rem;
 }
 
-.pfp {
+.pfp, .trending {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
@@ -166,7 +166,7 @@ button:hover {
 
 .announcements {
     display: grid;
-    grid-template-rows: 30px 1fr 30px 1fr;
+    grid-template-rows: 30px fit-content(100px) 30px fit-content(100px);
     grid-template-columns: 1fr;
     align-items: start;
 }
@@ -226,3 +226,8 @@ h3 {
     gap: 10px;
 }
 
+.trending-pfp {
+    grid-row: span 2;
+    margin-right: 20px;
+    height: 4rem;
+}
